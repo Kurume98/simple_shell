@@ -175,18 +175,18 @@ int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
-/* toem_builtin.c */
-int my_exit(info_t *);
-int my_cd(info_t *);
-int my_help(info_t *);
+/* toem_builtshellin.c */
+int our_exit(info_t *);
+int our_current_dir(info_t *);
+int our_help(info_t *);
 
-/* toem_builtin1.c */
+/* toem_builtshellin1.c */
 int my_history(info_t *);
 int my_alias(info_t *);
 
 /*toem_getline.c */
-ssize_t get_input(info_t *);
-int my_getline(info_t *, char **, size_t *);
+ssize_t get_inputs(info_t *);
+int our_getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinformation.c */
