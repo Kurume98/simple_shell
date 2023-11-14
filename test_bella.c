@@ -27,7 +27,7 @@ int _bettytest(const char *format, ...)
 		else if (format[i + 1] == 'c')
 		{
 			_putchar(va_arg(args_bella, int));
-			i++;
+  			i++;
 		}
 		else if (format[i + 1] == 's')
 		{
