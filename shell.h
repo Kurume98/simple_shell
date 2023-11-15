@@ -176,23 +176,23 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtshellin.c */
-int our_exit(info_t *);
-int our_current_dir(info_t *);
-int our_help(info_t *);
+int my_exit(info_t *);
+int my_current_dir(info_t *);
+int my_help(info_t *);
 
 /* toem_builtshellin1.c */
 int my_history(info_t *);
 int my_alias(info_t *);
 
 /*toem_getline.c */
-ssize_t get_inputs(info_t *);
-int our_getline(info_t *, char **, size_t *);
+ssize_t get_input(info_t *);
+int my_getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinformation.c */
-void clear_information(info_t *);
-void set_information(info_t *, char **);
-void free_information(info_t *, int);
+void clear_info(info_t *);
+void set_info(info_t *, char **);
+void free_info(info_t *, int);
 
 /* toem_environ.c */
 char *my_getenv(info_t *, const char *);
@@ -202,9 +202,9 @@ int my_unsetenv(info_t *);
 int populate_env_list(info_t *);
 
 /* toem_getenviron.c */
-char **get_environment(info_t *);
-int _unsetenvironment(info_t *, char *);
-int _setenvironment(info_t *, char *, char *);
+char **get_environ(info_t *);
+int _unsetenv(info_t *, char *);
+int _setenv(info_t *, char *, char *);
 
 /* toem_history.c */
 char *get_history_file(info_t *info);

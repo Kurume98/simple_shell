@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
-* our_exit - exits the shell
+* my_exit - exits the shell
 * @info: Structure containing potential arguments.
 * Return: exits with a given exit status
 *         (0) if info.argv[0] != "exit"
 */
-int our_exit(info_t *info)
+int my_exit(info_t *info)
 {
 	int checkExit;
 
@@ -29,11 +29,11 @@ int our_exit(info_t *info)
 }
 
 /**
-* our_current_dir - changes the current directory of the process
+* my_cd - changes the current directory of the process
 * @info: Structure containing potential arguments.
 * Return: Always 0
 */
-int our_current_dir(info_t *info)
+int my_cd(info_t *info)
 {
 	char *s, *dir, buffer[1024];
 	int chdir_ret;
@@ -77,11 +77,11 @@ int our_current_dir(info_t *info)
 	return (0);
 }
 /**
- * our_help - changes the current directory of the process
+ * my_help - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
  * Return: Always 0
  */
-int our_help(info_t *info)
+int my_help(info_t *info)
 {
 	char **arg_array;
 
