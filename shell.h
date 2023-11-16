@@ -35,7 +35,6 @@
 #define HIST_MAX	4096
 
 extern char **environ;
-int my_cd(info_t *info);
 
 /**
  * struct liststr - singly linked list
@@ -96,6 +95,7 @@ typedef struct passinfo
 	int readfd;
 	int histcount;
 }info_t;
+int my_cd(info_t *info);
 
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
