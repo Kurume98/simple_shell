@@ -94,7 +94,8 @@ typedef struct passinfo
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
-}info_t;
+} info_t;
+
 int my_cd(info_t *info);
 
 #define INFO_INIT \
